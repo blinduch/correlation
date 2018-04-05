@@ -1,5 +1,5 @@
-n = 37
-instance = "alarm"
+n = 48
+instance = "barley"
 inFile = open("results_final.txt")
 
 mapFile = open("/home/andrewli/Documents/MINOBS-anc/data/mappings/" + instance + ".mapping")
@@ -94,7 +94,7 @@ while True:
 	ncs = numConstraintsSatisfied(line3, line4)
 
 
-	tm = float(line1)
+	usrTm, sysTm = map(float, line1.strip().split(","))
 
 	line3 = line3[line3.index(".")+1:]
 	line3 = line3[:line3.index("-")]
@@ -102,7 +102,7 @@ while True:
 	cons = int(line3)
 
 	counts[cons] += 1
-	tmTotals[cons] += tm
+	tmTotals[cons] += usrTm + sysTm
 	models[cons].append((line4, caseNum))
 
 	if (ncs == cons):
@@ -118,7 +118,7 @@ for i in range(600):
 		print("Avg time:", tmTotals[i]/counts[i])
 		print("% Feasible:", 100*feasible[i]/counts[i])
 		print("% Constraints:",  100 if (i == 0) else 100*(totalSat[i] / (i * counts[i])))
-
-		for each in models[i]:
-			print("c(%s %d)," %(each[0].strip(), each[1]))
+		print("")
+		#for each in models[i]:
+			#print("c(%s %d)," %(each[0].strip(), each[1]))
 

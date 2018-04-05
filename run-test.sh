@@ -9,6 +9,6 @@ for csvFile in $(eval ls "$HOME/Documents/MINOBS-anc/data/${instance}_*.csv"); d
 	for constraintFile in $(eval ls "$HOME/Documents/MINOBS-anc/data/constraints/$constraints/*"); do
 
 		eval "./run-one-test.sh $csvFile $constraintFile $instance"
-		exit
+
 	done
 done

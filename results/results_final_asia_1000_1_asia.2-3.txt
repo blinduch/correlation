@@ -1,0 +1,4 @@
+5.77,0.35
+asia_1000_1
+asia.2-3
+"[asia][tub][smoke|either][lung][bronc|smoke][either|tub:lung][xray|either][dysp|bronc:either]",

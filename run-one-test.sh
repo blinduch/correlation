@@ -12,7 +12,7 @@ baseConstraint=$(basename ${constraintFile})
 
 
 echo "./camml.sh --priors ${constraintFile} --speed 1 ${csvFile}"
-eval "{ command time -f "%U" timeout 12h ./camml.sh --priors ${constraintFile} --speed 1 ${csvFile} results/${baseCSV}_${baseConstraint} ;} 2>> results/results_final_${baseCSV}_${baseConstraint}.txt"
+eval "{ command time -f "%U" timeout 12h ./camml.sh --priors ${constraintFile} --speed 1 --rand-seed 0 ${csvFile} results/${baseCSV}_${baseConstraint} ;} 2>> results/results_final_${baseCSV}_${baseConstraint}.txt"
 eval "egrep \"(node | *parents)\" results/${baseCSV}_${baseConstraint}.dne > results_parsed_${baseCSV}_${baseConstraint}.txt"
 
 eval "echo ${baseCSV} >> results/results_final_${baseCSV}_${baseConstraint}.txt"
