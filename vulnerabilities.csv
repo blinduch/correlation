@@ -1,0 +1,31 @@
+BugType,Company,Reporter,BugSeverity,Acquisition,Reward,Authenticated,ToolUsed
+XSS,Netflix,John,High,No,3000,No,BurpProxy
+RCE,Google,Jane,Critical,Yes,10000,Yes,ZAP
+SQLi,Facebook,Mike,High,No,5000,Yes,SQLMap
+CSRF,Amazon,Sarah,Medium,Yes,2000,No,OWASP Zap
+Information Disclosure,Microsoft,Alex,Low,No,1000,No,Nmap
+DoS,Twitter,Emily,Medium,No,1500,Yes,Wireshark
+SSRF,Apple,Chris,High,Yes,8000,Yes,BurpSuite
+LFI,GitHub,Ryan,Low,No,500,No,DirBuster
+Command Injection,Airbnb,Olivia,High,Yes,4000,Yes,Postman
+Remote Code Execution,Dropbox,Liam,Critical,Yes,15000,Yes,Metasploit
+XSS,Microsoft,Daniel,High,No,4000,Yes,BurpProxy
+RCE,Amazon,Jessica,Critical,Yes,12000,Yes,ZAP
+SQLi,Google,Andrew,High,Yes,6000,No,SQLMap
+CSRF,Facebook,Olivia,Medium,No,2500,No,OWASP Zap
+Information Disclosure,Netflix,Michael,Low,Yes,1200,Yes,Nmap
+DoS,Twitter,Sarah,Medium,No,1800,Yes,Wireshark
+SSRF,Apple,Jason,High,Yes,9000,Yes,BurpSuite
+LFI,GitHub,Emily,Low,No,600,No,DirBuster
+Command Injection,Airbnb,Ethan,High,Yes,5000,Yes,Postman
+Remote Code Execution,Dropbox,Ava,Critical,Yes,18000,Yes,Metasploit
+XSS,Netflix,Benjamin,High,Yes,5000,Yes,BurpProxy
+RCE,Google,Lily,Critical,No,8000,Yes,ZAP
+SQLi,Facebook,James,High,Yes,3000,No,SQLMap
+CSRF,Amazon,Mia,Medium,No,1500,No,OWASP Zap
+Information Disclosure,Microsoft,Sophia,Low,Yes,800,Yes,Nmap
+DoS,Twitter,Daniel,Medium,Yes,1000,No,Wireshark
+SSRF,Apple,Chloe,High,No,7000,Yes,BurpSuite
+LFI,GitHub,Emily,Low,Yes,300,Yes,DirBuster
+Command Injection,Airbnb,Ethan,High,No,3000,No,Postman
+Remote Code Execution,Dropbox,Ava,Critical,Yes,14000,Yes,Metasploit

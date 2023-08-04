@@ -1,10 +1,8 @@
-Quick guide to getting CaMML started (updated 17-02-2013) :
+# correlation
+[![License](https://img.shields.io/badge/license-MIT-_red.svg)](https://opensource.org/licenses/MIT)
 
-for the latest src see:
-    https://github.com/AlexDBlack/CaMML
-for docs & discussion see:
-    http://groups.google.com/group/camml/
-    
+correlation tries to use machine learning to help assess relations between data in testing/bug hunting
+
 ================
 == Installing ==
 ================
@@ -43,3 +41,19 @@ It can also be added to the weka GUI, but that's beyond the scope of this doc.
   > camml.sh -t Camml/camml/test/iris.arff
   > camml.bat -t Camml/camml/test/iris.arff (Windows)
 
+
+
+
+=======================
+== Practical Example ==
+=======================
+
+- prepare the csv files (vulnerabilities.csv) 
+- Convert continuous values to discrete ones(e.g. instead of '189.5', '89.8' use 'big', 'small' )
+  python3 Continuous2Discrete.py
+- launch camml_gui.sh
+- load the csv file with discrete valued
+- Go to 'Run' tab and press 'Run CaMML' 
+- Go to 'Results' and select a network and press 'View Selected Network'
+
+<a href="sample.png"></a>
