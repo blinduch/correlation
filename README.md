@@ -3,17 +3,13 @@
 
 correlation tries to use machine learning to help assess relations between data in testing/bug hunting
 
-================
 == Installing ==
-================
 
 To install camml, simply extract the BI-CaMML.zip file to a folder of your choice.
 
 You will need to make sure you have at least Java 6, and that the "java" program is in your system's PATH variable. (Java will normally do this for you automatically.)
 
-==============================
 == Running CaMML with a GUI ==
-==============================
 
 == CaMML GUI ==
 
@@ -44,9 +40,7 @@ It can also be added to the weka GUI, but that's beyond the scope of this doc.
 
 
 
-=======================
 == Practical Example ==
-=======================
 
 - prepare the csv files (vulnerabilities.csv) 
 - Convert continuous values to discrete ones(e.g. instead of '189.5', '89.8' use 'big', 'small' )
@@ -56,4 +50,5 @@ It can also be added to the weka GUI, but that's beyond the scope of this doc.
 - Go to 'Run' tab and press 'Run CaMML' 
 - Go to 'Results' and select a network and press 'View Selected Network'
 
-<a href="sample.png"></a>
+![Sample](sample.png?raw=true "Sample")
+
